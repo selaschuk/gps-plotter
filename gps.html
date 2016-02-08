@@ -24,7 +24,7 @@
     var locations = {};//A repository for markers (and the data from which they were constructed).
 
     var locs;
-    $.getJSON("gps.json", function(json){
+    $.getJSON("http://gps.server.com:8889/gps.json", function(json){
         locs = json;
         setMarkers(locs);
     });
@@ -116,7 +116,7 @@ function setMarkers(locObj) {
 
     var ajaxObj = {//Object to save cluttering the namespace.
         options: {
-            url: "gps.json",//The resource that delivers loc data.
+            url: "http://gps.server.com:8889/gps.json",//The resource that delivers loc data.
             dataType: "json"//The type of data tp be returned by the server.
         },
         delay: 5000,//(milliseconds) the interval between successive gets.
