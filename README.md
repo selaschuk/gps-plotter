@@ -9,4 +9,6 @@ Dev-0054,$GPVTG,269.4,T,269.4,M,38.7,N,71.6,K,A*2F
 
 Edit http://gps.server.com:8889/gps.json in gps.html to point to wherever gps.py is running
 
+Requires [pynmea2](https://github.com/Knio/pynmea2)
+
 HTML from this fantastic stackoverflow response: http://stackoverflow.com/questions/14771422/google-map-v3-auto-refresh-markers-only
